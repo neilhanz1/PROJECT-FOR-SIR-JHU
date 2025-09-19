@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Emerald Perfume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap & Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/fontAwesome.css">
+  <link rel="stylesheet" href="css/hero-slider.css">
+  <link rel="stylesheet" href="css/owl-carousel.css">
+  <link rel="stylesheet" href="css/templatemo-style.css">
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .register-banner {
+      background: url("eme.jpg") no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px; /* avoid header overlap */
+    }
+    .register-card {
+      background: rgba(241, 170, 209, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      max-width: 400px;
+      width: 100%;
+    }
+    footer {
+      background: #222;
+      color: #5560fd;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer p, footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    footer ul li a {
+      color: #f70808;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <a href="home.html" class="navbar-brand">Emerald Perfume</a>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Register Section -->
+  <section class="register-banner">
+    <div class="register-card">
+      <h3 class="text-center mb-3">Emerald Perfume</h3>
+      <h4 class="text-center mb-4">Register</h4>
+      <form id="registerForm">
+        <div class="form-group mb-3">
+          <label for="newUsername">Username</label>
+          <input type="text" id="newUsername" class="form-control" placeholder="Choose username" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="newPassword">Password</label>
+          <input type="password" id="newPassword" class="form-control" placeholder="Enter password" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required>
+        </div>
+        <div id="register-message" class="text-center mb-3" style="display:none;"></div>
+        <button type="submit" class="btn btn-success w-100">Register</button>
+      </form>
+      <p class="text-center mt-3">Already have an account? <a href="index.html">Login</a></p>
+    </div>
+  </section>
+
+ 
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/bisaya.js"></script>
+</body>
+</html>
